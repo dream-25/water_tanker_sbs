@@ -2,7 +2,6 @@ import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
 import 'package:phedtanker/api_code/apiconstants.dart';
 import 'package:phedtanker/screens/dashboard.dart';
-import 'package:phedtanker/utils/shared_preferences.dart';
 
 class ApiProvider {
   login(String phone, String url) async {

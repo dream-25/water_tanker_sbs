@@ -7,15 +7,14 @@ class User {
   final String Pouring;
   final String Status;
 
-  const User({
-    required this.firstName,
-    required this.lastName,
-    required this.age,
-    required this.filling,
-    required this.location,
-    required this.Pouring,
-    required this.Status
-  });
+  const User(
+      {required this.firstName,
+      required this.lastName,
+      required this.age,
+      required this.filling,
+      required this.location,
+      required this.Pouring,
+      required this.Status});
 
   /*User copy({
     String? firstName,

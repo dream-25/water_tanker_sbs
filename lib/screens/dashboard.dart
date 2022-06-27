@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:phedtanker/screens/homescreen.dart';
 import 'package:phedtanker/screens/profilescreen.dart';
 import 'package:phedtanker/screens/report1.dart';
-import 'package:phedtanker/screens/reports.dart';
 import 'package:phedtanker/utils/colors.dart';
 
 class DashBoard extends StatefulWidget {
@@ -18,7 +17,7 @@ class _DashBoard extends State {
 
   @override
   void initState() {
-    _child = HomeScreen();
+    _child = const HomeScreen();
     super.initState();
   }
 
@@ -55,13 +54,13 @@ class _DashBoard extends State {
     setState(() {
       switch (index) {
         case 0:
-          _child = HomeScreen();
+          _child = const HomeScreen();
           break;
         case 1:
           _child = SortablePage();
           break;
         case 2:
-          _child = ProfileScreen();
+          _child = const ProfileScreen();
           break;
       }
       _child = AnimatedSwitcher(

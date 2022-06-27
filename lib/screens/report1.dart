@@ -18,7 +18,7 @@ class _SortablePageState extends State<SortablePage> {
   void initState() {
     super.initState();
 
-    this.users = List.of(allUsers);
+    users = List.of(allUsers);
   }
 
   @override
@@ -43,9 +43,9 @@ class _SortablePageState extends State<SortablePage> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: const Text(
+            const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Text(
                 'Trip List',
                 style: TextStyle(fontSize: 20),
               ),
@@ -106,13 +106,13 @@ class _SortablePageState extends State<SortablePage> {
       users.sort((user1, user2) =>
           compareString(ascending, user1.lastName, user2.lastName));
     } else if (columnIndex == 2) {
-      users.sort((user1, user2) =>
-          compareString(ascending, '${user1.age}', '${user2.age}'));
+      users.sort(
+          (user1, user2) => compareString(ascending, user1.age, user2.age));
     }
 
     setState(() {
-      this.sortColumnIndex = columnIndex;
-      this.isAscending = ascending;
+      sortColumnIndex = columnIndex;
+      isAscending = ascending;
     });
   }
 

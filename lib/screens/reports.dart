@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:phedtanker/screens/model/report_model.dart';
 import 'package:phedtanker/screens/report_page/info.dart';
 import 'package:phedtanker/utils/colors.dart';
-import 'package:phedtanker/utils/fontstyles.dart';
 
 class Reports extends StatefulWidget {
   const Reports({Key? key}) : super(key: key);
@@ -63,6 +62,7 @@ class _ReportsState extends State<Reports> {
       postVideo: "assets/images/video1.mp4",
     ),
   ];
+  @override
   Widget build(
     BuildContext context,
   ) {

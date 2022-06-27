@@ -1,6 +1,4 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:phedtanker/utils/colors.dart';
 
 class info extends StatefulWidget {
   const info({Key? key}) : super(key: key);
@@ -55,7 +53,7 @@ class _infoState extends State<info> {
               ),
             ),
           ),
-          SizedBox(height: 5),
+          const SizedBox(height: 5),
           Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
@@ -87,7 +85,7 @@ class _infoState extends State<info> {
               ),
             ),
           ),
-          SizedBox(height: 5),
+          const SizedBox(height: 5),
           Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
@@ -118,7 +116,7 @@ class _infoState extends State<info> {
               ),
             ),
           ),
-          SizedBox(height: 5),
+          const SizedBox(height: 5),
           Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
@@ -149,7 +147,7 @@ class _infoState extends State<info> {
               ),
             ),
           ),
-          SizedBox(height: 5),
+          const SizedBox(height: 5),
           Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),

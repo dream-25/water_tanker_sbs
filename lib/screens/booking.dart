@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:phedtanker/screens/en-route.dart';
 import 'package:phedtanker/utils/boxes.dart';
 import 'package:phedtanker/utils/colors.dart';
 import 'package:phedtanker/utils/fontstyles.dart';
@@ -19,7 +18,7 @@ class _BookingsState extends State<Bookings> {
       backgroundColor: bgColor,
       appBar: AppBar(
           automaticallyImplyLeading: false,
-          title: Text("PHED Tanker Tracking")),
+          title: const Text("PHED Tanker Tracking")),
       body: Card(
         child: Container(
           height: Get.height * .5,
@@ -37,7 +36,8 @@ class _BookingsState extends State<Bookings> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  SizedBox(width: Get.width * .3, child: Text("Booking Id")),
+                  SizedBox(
+                      width: Get.width * .3, child: const Text("Booking Id")),
                   Text(
                     "TP7605",
                     style: bold,
@@ -48,7 +48,8 @@ class _BookingsState extends State<Bookings> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  SizedBox(width: Get.width * .3, child: Text("Journey Date")),
+                  SizedBox(
+                      width: Get.width * .3, child: const Text("Journey Date")),
                   Text(
                     DateTime.now().toString().substring(0, 16),
                     style: bold,
@@ -58,7 +59,7 @@ class _BookingsState extends State<Bookings> {
               box02,
               Card(
                 child: Container(
-                  margin: EdgeInsets.symmetric(horizontal: 10),
+                  margin: const EdgeInsets.symmetric(horizontal: 10),
                   width: Get.width,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -69,7 +70,7 @@ class _BookingsState extends State<Bookings> {
                         "Transport Nagar Hydrant",
                         style: bold,
                       ),
-                      Text(
+                      const Text(
                         "Transport Nagar Hydrant",
                       )
                     ],
@@ -79,7 +80,7 @@ class _BookingsState extends State<Bookings> {
               box02,
               Card(
                 child: Container(
-                  margin: EdgeInsets.symmetric(horizontal: 10),
+                  margin: const EdgeInsets.symmetric(horizontal: 10),
                   width: Get.width,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -109,7 +110,7 @@ class _BookingsState extends State<Bookings> {
                   InkWell(
                     onTap: () {
                       Get.dialog(AlertDialog(
-                        title: Text("Do you want to Accept"),
+                        title: const Text("Do you want to Accept"),
                         content: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisSize: MainAxisSize.min,
@@ -119,7 +120,7 @@ class _BookingsState extends State<Bookings> {
                                 children: [
                                   SizedBox(
                                       width: Get.width * .25,
-                                      child: Text(
+                                      child: const Text(
                                         "Booking Id",
                                         style: TextStyle(fontSize: 12),
                                       )),
@@ -135,7 +136,7 @@ class _BookingsState extends State<Bookings> {
                                 children: [
                                   SizedBox(
                                       width: Get.width * .25,
-                                      child: Text(
+                                      child: const Text(
                                         "Journey Date",
                                         style: TextStyle(fontSize: 12),
                                       )),
@@ -148,7 +149,8 @@ class _BookingsState extends State<Bookings> {
                               box02,
                               Card(
                                 child: Container(
-                                  margin: EdgeInsets.symmetric(horizontal: 10),
+                                  margin: const EdgeInsets.symmetric(
+                                      horizontal: 10),
                                   width: Get.width,
                                   child: Column(
                                     crossAxisAlignment:
@@ -161,7 +163,7 @@ class _BookingsState extends State<Bookings> {
                                         "Transport Nagar Hydrant",
                                         style: bold,
                                       ),
-                                      Text(
+                                      const Text(
                                         "Transport Nagar Hydrant",
                                       )
                                     ],
@@ -171,7 +173,8 @@ class _BookingsState extends State<Bookings> {
                               box02,
                               Card(
                                 child: Container(
-                                  margin: const EdgeInsets.symmetric(horizontal: 10),
+                                  margin: const EdgeInsets.symmetric(
+                                      horizontal: 10),
                                   width: Get.width,
                                   child: Column(
                                     crossAxisAlignment:
@@ -193,19 +196,19 @@ class _BookingsState extends State<Bookings> {
                         actions: [
                           MaterialButton(
                             onPressed: () {},
+                            color: green,
                             child: Text(
                               "Accept",
                               style: whiteBold,
                             ),
-                            color: green,
                           ),
                           MaterialButton(
                             onPressed: () {},
+                            color: blue,
                             child: Text(
                               "Cancel",
                               style: whiteBold,
                             ),
-                            color: blue,
                           ),
                         ],
                       ));
@@ -244,7 +247,7 @@ class _BookingsState extends State<Bookings> {
         children: [
           FloatingActionButton(
             onPressed: () {},
-            child: Icon(
+            child: const Icon(
               Icons.refresh,
               size: 32,
             ),

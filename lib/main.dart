@@ -1,13 +1,10 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:phedtanker/auth/login.dart';
-import 'package:phedtanker/login/Welcome.dart';
 import 'package:phedtanker/screens/dashboard.dart';
-import 'package:phedtanker/utils/colors.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-Future <void> main() async {
+Future<void> main() async {
   runApp(const MyApp());
 }
 
@@ -47,7 +44,7 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         primaryColor: Colors.purple,
       ),
-      home: auth ? DashBoard() : LoginScreen(),
+      home: auth ? DashBoard() : const LoginScreen(),
     );
   }
 }

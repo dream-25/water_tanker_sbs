@@ -102,7 +102,7 @@ class _EnRouteState extends State<EnRoute> {
               Container(
                 height: 30,
                 width: double.infinity,
-                padding: EdgeInsets.only(left: 10),
+                padding: const EdgeInsets.only(left: 10),
                 color: Colors.grey,
                 child: Align(
                     alignment: Alignment.centerLeft,

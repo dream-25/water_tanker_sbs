@@ -57,7 +57,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     ],
                   )),
                 ),
-                Divider(),
+                const Divider(),
                 ListTile(
                   title: Text(
                     "Driver ID",
@@ -74,7 +74,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         TextStyle(color: black.withOpacity(.7), fontSize: 12),
                   ),
                 ),
-                Divider(),
+                const Divider(),
                 ListTile(
                   title: Text(
                     "Name",
@@ -91,7 +91,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         TextStyle(color: black.withOpacity(.7), fontSize: 12),
                   ),
                 ),
-                Divider(),
+                const Divider(),
                 ListTile(
                   title: Text(
                     "Email",
@@ -108,7 +108,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         TextStyle(color: black.withOpacity(.7), fontSize: 12),
                   ),
                 ),
-                Divider(),
+                const Divider(),
                 ListTile(
                   title: Text(
                     "Phone",
@@ -125,7 +125,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         TextStyle(color: black.withOpacity(.7), fontSize: 12),
                   ),
                 ),
-                Divider(),
+                const Divider(),
                 ListTile(
                   title: Text(
                     "Alt Phone",
@@ -142,7 +142,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         TextStyle(color: black.withOpacity(.7), fontSize: 12),
                   ),
                 ),
-                Divider(),
+                const Divider(),
                 ListTile(
                   title: Text(
                     "Address",
